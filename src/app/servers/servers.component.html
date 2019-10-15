@@ -1,3 +1,6 @@
-<button class="button.btn.btn-primay" [disabled]="allowNewServer">Add Server</button>
+<button class="button.btn.btn-primay" [disabled]="!allowNewServer">Add Server</button>
+<p>{{ allowNewServer }}</p>
+<p>above is same as below</p>
+<p [innerText]="allowNewServer">what about this</p> 
 <app-server></app-server>
 <app-server></app-server>
