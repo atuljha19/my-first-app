@@ -11,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No server created";
-  serverName = '';
+  serverName = 'atul';
   constructor() { 
   // sample to how power of property binding.
   setTimeout(() => {
