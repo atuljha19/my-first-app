@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No server created";
+  serverName = '';
   constructor() { 
   // sample to how power of property binding.
   setTimeout(() => {
@@ -24,4 +25,8 @@ export class ServersComponent implements OnInit {
   	this.serverCreationStatus = "Server was created!"
   }
 
+  onUpdateServerName(event: Event) {
+  	this.serverName = (<HTMLInputElement>event.target).value;
+  	//<HTMLInputElement> is needed for Typesciprt
+  }
 }
