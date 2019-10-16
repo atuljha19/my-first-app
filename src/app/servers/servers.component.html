@@ -1,6 +1,9 @@
-<button class="button.btn.btn-primay" [disabled]="!allowNewServer">Add Server</button>
+<button class="button.btn.btn-primay" (click)="onCreateServer()" [disabled]="!allowNewServer">Add Server</button>
 <p>{{ allowNewServer }}</p>
 <p>above is same as below</p>
 <p [innerText]="allowNewServer">what about this</p> 
+<p>string interpolation will not work with property binding.</p>
+<p>{{ Server }}</p>
 <app-server></app-server>
-<app-server></app-server>
+<app-server></app-server>	
+<p>{{ serverCreationStatus }}</p>
